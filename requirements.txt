@@ -1,0 +1,5 @@
+flask
+streamlit
+requests
+beautifulsoup4
+gunicorn

@@ -5,7 +5,9 @@ from bs4 import BeautifulSoup
 
 # Initialize Flask app
 app = Flask(__name__)  # Correct syntax for Flask initialization
-
+@app.route("/")
+def home():
+    return "Welcome to the Live Stock Price Tracker! Use /get_stock_price to check prices."
 # API Route: Fetch stock price
 @app.route('/get_stock_price', methods=['GET'])
 def get_stock_price():
